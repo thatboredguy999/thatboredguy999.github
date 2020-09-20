@@ -236,6 +236,7 @@ function w3_open() {
   } else {
     mySidebar.style.display = 'block';
     overlayBg.style.display = "block";
+    document.getElementById("mySidebar").style.display = "block";
   }
 }
 
@@ -243,7 +244,7 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
-  
+  document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 
