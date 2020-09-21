@@ -62,13 +62,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <body>
 <iframe src="https://calendar.google.com/calendar/embed?src=c_pg5u36li2osnd5rroi8ig4p33o%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-  <button onclick="myFunc('Oct 19')" class="w3-button w3-block w3-left-align">
-October 19th 2020- CACI Training Event</button>
+  <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+Open Section 1</button>
 
-<div id="Oct 19" class="w3-hide">
-  <p>Information on CACI Training Time goes here...</p>
+<div id="Demo1" class="w3-container w3-hide">
+  <p>Some text..</p>
 </div>
-  </body>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
   
   <!-- Footer -->
   <!--footer class="w3-container w3-padding-16 w3-light-grey">
@@ -96,18 +106,7 @@ function w3_open() {
 }
 
 // Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-  function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+
   
 </script>
 
